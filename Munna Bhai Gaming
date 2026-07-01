@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Munna Bhai Gaming Fan Club</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#000,#222,#ff0000);
+    color:white;
+    text-align:center;
+}
+header{
+    background:#111;
+    padding:20px;
+}
+.logo{
+    width:120px;
+    border-radius:50%;
+    border:3px solid red;
+}
+.hero{
+    padding:50px 20px;
+}
+.button{
+    display:inline-block;
+    margin:10px;
+    padding:12px 24px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+.button:hover{
+    background:white;
+    color:red;
+}
+.card{
+    margin:20px;
+    padding:20px;
+    background:rgba(255,255,255,0.1);
+    border-radius:12px;
+}
+footer{
+    background:#111;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<img src="https://via.placeholder.com/120" class="logo" alt="Logo">
+<h1>Munna Bhai Gaming Fan Club</h1>
+<p>Unofficial Fan Website</p>
+</header>
+
+<section class="hero">
+<h2>Welcome Gamers 🎮</h2>
+<p>Welcome to the Munna Bhai Gaming fan website.</p>
+
+<a class="button" href="https://www.youtube.com" target="_blank">YouTube</a>
+</section>
+
+<div class="card">
+<h2>Subscribers</h2>
+<h1 id="subs">Loading...</h1>
+</div>
+
+<footer>
+<p>Made by MBG_THUNDER</p>
+<p>This is an unofficial fan website and is not affiliated with or endorsed by Munna Bhai Gaming.</p>
+</footer>
+
+<script>
+let subs=1000000;
+setInterval(()=>{
+subs+=Math.floor(Math.random()*5);
+document.getElementById("subs").innerHTML=subs.toLocaleString()+"+";
+},1000);
+</script>
+
+</body>
+</html>
